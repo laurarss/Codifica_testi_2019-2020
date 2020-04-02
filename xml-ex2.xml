@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- DTD ci dice che l'elemento è fatto dalla radice: nodo testuale -->
+<!DOCTYPE radice [
+<!-- dichiarz di elem DTD che specificano la struttr e il contenuto del doc xml -->
+        <!ELEMENT radice (figlio) >
+        <!ELEMENT figlio (#PCDATA) >
+] >
+<radice>
+    <figlio>
+        dati testuali
+    </figlio>
+</radice>
