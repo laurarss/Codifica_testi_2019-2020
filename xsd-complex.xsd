@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+    Esercizio: primo file xsd
+    Author: Laura Rossi
+    Matricola: 559715
+
+    Creazione file xsd collegato al file "xml-schComplex.xml".
+    Il file presenta un elemento di tipo complesso, poichè ha un attributo.
+-->
+
+<xsd:schema
+        xmlns:xsd="http://www.w3c.org/2001/XMLSchema">
+    <xsd:element name="Employee">
+        <xsd:complexType>
+            <!-- nome attributo associato ad elemento "employee" -->
+            <xsd:attribute name="FirstName"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
