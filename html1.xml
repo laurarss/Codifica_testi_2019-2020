@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding = "UTF-8" standalone = "yes"?>
+<!--
+    Esercizio: Inserire all'interno di un tag un frammento di codice HTML
+    Author: Laura Rossi
+    Matricola: 559715
+-->
+<htmlCode>
+    <![CDATA[
+        <h1>Capitolo Primo</h1>
+        <h2>Sezione Seconda</h2>
+        <h3>Sezione Terza</h3>
+    ]]>
+</htmlCode>
