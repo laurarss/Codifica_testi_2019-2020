@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Employee FirstName="Laura">
+    Testo del file xml, va accordato con il file xsd, che ne definisce lo schema.
+    Per farlo si utilizza xmllint utilizzando il comando "--schema".
+</Employee>

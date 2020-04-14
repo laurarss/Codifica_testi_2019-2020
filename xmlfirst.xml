@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<text>
+    il primo xml con validazione
+
+    <!-- Error:(5, 2) The markup in the document following the root element must be well-formed. -->
+    <!-- cancello chiusura precedente dell'elemento <text>, uso la tag corretto in basso per chiudere -->
+
+    <p> primo figlio </p>
+    <p> secondo figlio(fratello del primo) </p>
+    
+    <!-- sistemata chiusura del tag text con lo slash prima del nome -->
+</text>
