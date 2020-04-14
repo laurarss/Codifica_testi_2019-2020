@@ -1,10 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!-- DTD ci dice che l'elemento è fatto dalla radice: nodo testuale -->
+<?xml version="1.0" encoding="UTF-8" standalone = "yes"?>
+<!--
+    Esercizio: associazione interna di una dtd
+    Author: Laura Rossi
+    Matricola: 559715
+
+    Dichiarazione di una DTD interna che specifica la struttura e il contenuto del documento xml.
+    La DTD ci dice che l'elemento è fatto dalla radice: nodo testuale
+-->
+
 <!DOCTYPE radice [
-<!-- dichiarz di elem DTD che specificano la struttr e il contenuto del doc xml -->
         <!ELEMENT radice (figlio) >
         <!ELEMENT figlio (#PCDATA) >
-] >
+        ] >
 <radice>
     <figlio>
         dati testuali
