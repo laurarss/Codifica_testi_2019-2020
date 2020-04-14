@@ -1,0 +1,10 @@
+<!--
+    Esercizio: Dichiarare i seguenti elementi in dtd
+    Author: Laura Rossi
+    Matricola: 559715
+-->
+
+<!ELEMENT TEI (header,facsimile?,testo+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
