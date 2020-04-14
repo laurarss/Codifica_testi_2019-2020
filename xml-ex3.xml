@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<!--
+    Esercizio: associazione esterna di una dtd
+    Author: Laura Rossi
+    Matricola: 559715
+
+    La DTD in questo caso è esterna al file xml, nel file "text.dtd"
+-->
+<!DOCTYPE radice SYSTEM "./text.dtd">
+<radice>
+    <figlio>
+        dati testuali
+    </figlio>
+</radice>
