@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd"><!-- Inserire nome file DTD -->
+<?xml-stylesheet type="text/xsl" href=".xsl"?><!-- modifiche di stile inserimento file xsl-->
+<!-- Progetto per l'esame di codifica di testi dell'Università di Pisa aa 2019/2020 
+codifica di cartoline storiche della Grande Guerra 
+A cura di: Laura Rossi mat 559715 e Silvia Bonaccorsi mat 560155 -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Codifica cartoline: edizione digitale </title>
+                <!-- trascrizione e codifica a cura di -->
+                <respStmt>
+                    <resp> Trascrizione e codifica Tei a cura di </resp>
+                    <persName xml:id="LR"> Laura Rossi </persName>
+                    <persName xml:id="SB"> Silvia Bonaccorsi </persName>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt>
+                <edition> Edizione digitale 
+                    <date> 2021 </date>
+                </edition>
+                <respStmt>
+                    <resp>Encoding by</resp>
+                    <name ref="#LR"> Laura Rossi </name>
+                    <name ref="#SB"> Silvia Bonaccorsi </name>
+                </respStmt>
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+                <publisher>
+                    <orgName type="university"> Università di <placeName ref="#PI">Pisa</placeName>
+                    </orgName>
+                </publisher>
+                <distributor>
+                    <orgName>Museo di La Spezia</orgName>
+                </distributor>
+                <pubPlace>
+                    <placeName ref="#SP"> La Spezia(SP) </placeName>
+                </pubPlace>
+                <availability status="restricted">
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc> <!-- fonti -->
+                <!-- lista persone -->
+                <listPerson>
+                    <person xml:id="auth_GC" role="sender">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <addName type="nickname">"Giovannino"</addName>
+                            <surname>Coliola</surname>
+                        </persName>
+                        <sex value="M">uomo</sex>
+                        <nationality key="IT">italiano</nationality>
+                        <langKnowledge>
+                            <langKnown tag="it-IT">italiano</langKnown>
+                        </langKnowledge>
+                    </person>
+
+                    <person xml:id="Oliva" role="addressee">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex value="F">donna</sex>
+                        <nationality key="IT">italiana</nationality>
+                        <langKnowledge>
+                            <langKnown tag="it-IT">italiano</langKnown>
+                        </langKnowledge>
+                    </person>
+                </listPerson>
+
+                <!-- lista luoghi -->
+                <listPlace>
+                    <place xml:id="MO">
+                        <placeName type="comune"> Modena </placeName>
+                        <location>
+                            <district type="provincia">Modena</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="RA">
+                        <placeName type="comune"> Ravenna </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Ravenna</district>
+                            <district type="provincia">Ravenna</district>
+                            <region>Emilia-Romagna</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="SP">
+                        <placeName type="comune"> La Spezia </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">La Spezia</district>
+                            <district type="provincia">La Spezia</district>
+                            <region>Liguria</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+
+                    <place xml:id="PI">
+                        <placeName type="comune"> Pisa </placeName>
+                        <location>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Pisa</district>
+                            <district type="provincia">Pisa</district>
+                            <region>Toscana</region>
+                            <country key="IT">Italia</country>
+                        </location>
+                    </place>
+                </listPlace>
+
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <!-- CARTOLINA 25 -->
+    <TEI xml:id="C025">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <!-- titolo cartolina -->
+                    <title> Postcard from Loch Tummel </title>
+                    <!-- trascrizione e codifica a cura di -->
+                    <respStmt>
+                        <resp> Trascrizione e codifica Tei a cura di </resp>
+                        <persName ref="#LR"> Laura Rossi </persName>
+                        <persName ref="#SB"> Silvia Bonaccorsi </persName>
+                    </respStmt>
+                </titleStmt>
+
+                <editionStmt>
+                    <edition> Edizione digitale 
+                        <date> 2021 </date>
+                    </edition>
+                    <respStmt>
+                        <resp>Encoding</resp>
+                        <name ref="#LR"> Laura Rossi </name>
+                        <name ref="#SB"> Silvia Bonaccorsi </name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Compilatore</resp>
+                        <name ref="#TC">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university"> Università di <placeName ref="#PI">Pisa</placeName>
+                        </orgName>
+                    </publisher>
+                    <distributor>
+                        <orgName>Museo di La Spezia</orgName>
+                    </distributor>
+                    <pubPlace>
+                        <placeName ref="#SP"> La Spezia(SP) </placeName>
+                    </pubPlace>
+                    <availability status="restricted">
+                        <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                    </availability>
+                </publicationStmt>
+
+                <sourceDesc> <!-- descrizione generale -->
+                    <biblStruct> <!-- bibliographic citation -->
+                        <monogr> <!-- contenitore elem bibliografici -->
+                            <author>
+                                <persName ref="#auth_GC">
+                                    <forename> Giovanni </forename>
+                                    <surname> Coliola </surname>
+                                </persName>
+                            </author>
+                            <title> Tuck's Post Card </title><!-- titolo cartolina 25 -->
+                            <imprint> <!-- informazioni relative a pubblicazione e distribuzione-->
+                                <date when="1916-11-26" xml:id="postcard_date"> 26 Novembre 1<corr corresp="9">6</corr>16
+                                    <note>Si nota l'errore di impostazione timbro sulla data, dove l'anno appare 1616 anzichè 1916.</note>
+                                </date>
+                                <pubPlace>
+                                    <note facs="#stampSxBottom">Logo della casa di stampa.</note>
+                                    <note facs="#print">"Printed in <placeName>England</placeName>", indicazione del luogo di stampa della cartolina.</note>
+                                </pubPlace>
+                                <publisher facs="#diritti">
+                                    "BONNIE SCOTLAND." - Perthshire Raphael Tuck and Sons' "OILETTE "
+                                    Postcard No. 7809 ART PUBLISCHERS TO THEIR MAJESTIES THE KING AND QUEEN.
+                                    After the Original Painting by H. B. WIMBUSH.
+                                </publisher>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+
+                    <msDesc> <!-- informazioni sulla cartolina-->
+                        <msIdentifier>
+                            <country> Italia </country>
+                            <!-- codice indentificativo cartolina-->
+                            <idno> 7694_025 </idno>
+                        </msIdentifier>
+                        <msContents> <!-- informazioni sul contenuto della cartolina -->
+                            <summary> Cartolina artistica </summary>
+                            <textLang> Italiano </textLang>
+                        </msContents>
+                        <physDesc> <!-- Descrizone fisica dei contenuti -->
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType> <!-- descrizione dei materiali  -->
+                                        <material>Cartoncino</material>
+                                        <!-- grandezza appossimativa del documento elettronico -->
+                                        <dimensions unit="cm">
+                                            <height>10</height>
+                                            <width>15</width>
+                                        </dimensions>
+                                        <stamp> <!-- timbro> -->
+                                            Sono presenti due timbri:
+                                            Il primo è di arrivo a Ravenna datato <date when="1916-11-26"> 26 Novembre 1916 </date> presenta infatti un errore di trimbro ?
+                                            e l'altro dall'ufficio postale di partenza illeggibile causa sbavatura d'inchiostro. 
+                                        </stamp>
+                                        <stamp> <!-- francobollo -->
+                                            Francobollo capovolto e messo in diagonale, colore verde.
+                                        </stamp>
+                                        <!-- descrizione della cartolina -->
+                                        <p>
+                                            Testo solo sul retro, scritto a penna e conservato in buone condizioni. 
+                                            Timbri postali leggermente sbiaditi, francobollo di colore verde con sbiaditura inchiostro nell'angolo in alto a destra.
+                                            Non sono presenti scritte nella parte frontale della cartolina, dove è presente una rappresentazione artistica del Loch Tummel.
+                                            Il cartoncino è di colore avorio e sono presenti descrizioni sul luogo rappresentato nel dipinto. 
+                                            E' presente un logo decentrato a sinistra.
+                                            <note facs="#impronta"> Segno di impronta con inchiostro nell'angolo in basso a destra. </note>
+                                            <note facs="#macchia"> Macchia con righe di inchiostro nell'angolo in alto a destra. </note>
+                                            <note facs="#centralspot"> Macchia centrale forse impronta del timbro trapassata dal retro. </note>
+                                        </p>
+                                    </support>
+                                    <condition> Buono </condition>
+                                </supportDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <p>La cartolina presenta del testo stampato, contenente informazioni sull'edizione e sul luogo rappresentato, oltre al testo scritto a mano dal mittente.</p>
+                            </handDesc>
+                        </physDesc>
+                    </msDesc>
+
+                    <listPlace>
+                        <place>
+                            <placeName type="comune" ref="#RA"> Ravenna </placeName>
+                            <location>
+                                <settlement type="località">città</settlement>
+                                <district type="comune">Ravenna</district>
+                                <district type="provincia">Ravenna</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+                        <!-- il timbro dell'ufficio postale è sbiadito, si presuppone che sia stata inviata da modena -->
+                        <place>
+                            <placeName ref ="#MO" type="comune"> Modena </placeName>
+                            <location>
+                                <district type="provincia">Modena</district>
+                                <region>Emilia-Romagna</region>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+                    </listPlace>
+                </sourceDesc>
+            </fileDesc>
+
+            <profileDesc>
+                <correspDesc>                    <!-- corrispondenza -->
+                    <correspAction type="sent">                        <!-- Mittente-->
+                        <date when="1916-11-23"> 23 Novembre 1916 </date>
+                        <persName ref="#auth_GC" role="sender"> Giovanni Coliola </persName>
+                    </correspAction>
+                    <correspAction type="received">                        <!-- destinatario -->
+                        <persName ref="#Oliva" role="addressee"> Oliva Turtura</persName>
+                        <!-- segnalazione correzione di data scorretta su timbro -->
+                        <date ref="#postcard_date" when="1916-11-23"> 23 Novembre 1916 </date>
+                        <location xml:id="loc_OT">
+                            <country key="IT"/>
+                            <settlement type="city">Ravenna</settlement>
+                            <placeName type="street">
+                                Via Girolamo Rossi , <num>58</num>
+                            </placeName>
+                        </location>
+                    </correspAction>
+                </correspDesc>
+                <langUsage>
+                    <language ident="it-IT">Italiano</language>
+                </langUsage>
+            </profileDesc>
+            <!-- Inserire encodingdesc -->
+        </teiHeader>
+        <!-- Facsimile Cartolina 25 -->
+        <facsimile>
+            <!--riproduzione del retro-->
+            <surface xml:id="c025R">
+                <graphic url='7694-025R.jpg' width='1651px' height='1043px' />
+                <!--Elementi sx-->
+                <zone xml:id="num25" points = ' 11,13 13,32 53,29 52,9 ' />
+                <zone xml:id="stampLeft" points = ' 65,40 62,106 135,108 135,39 '  />
+                <zone xml:id="diritti" points = ' 5,332 57,332 58,42 6,37 ' rotate="90"/>
+                <zone xml:id="desc025" points = ' 63,105 62,188 282,192 278,100 '  />
+                <zone xml:id="stampSxBottom" points = ' 15,343 15,361 39,359 40,342 ' />
+                <zone xml:id="print" points = ' 27,366 25,375 117,378 115,366 ' />
+                <!--Elem. centrali-->
+                <zone xml:id="titolo" points = ' 159,45 162,67 451,71 450,43 ' />
+                <zone xml:id="sottoTitolo" points = ' 148,78 147,93 463,91 462,74 ' />
+                <!--Elem. dx-->
+                <zone xml:id="timbroInvio" points = ' 477,5 431,62 447,114 491,142 577,144 593,60 543,9 ' />
+                <zone xml:id="timbroArrivo" points = ' 291,38 309,19 333,11 374,5 417,25 426,87 380,131 331,131 300,99 '  />
+                <zone xml:id="impronta" points = ' 587,266 567,269 547,280 532,299 532,318 559,343 594,352 ' />
+                <zone xml:id="macchia" points = ' 526,2 547,24 567,39 583,53 599,40 596,2 ' />
+                <!-- testo scritto -->
+                <zone xml:id="date" points = ' 211,93 138,90 143,121 165,144 182,163 169,167 179,182 188,197 213,209 224,223 234,238 248,254 283,246 252,193 234,151 226,123 ' rotate="45"/> 
+                <zone xml:id="riga1" points = ' 145,131 116,134 140,181 132,201 169,216 191,243 236,295 262,274 ' rotate="45"/>
+                <zone xml:id="riga2" points = ' 87,165 52,205 122,239 133,282 221,358 240,331 157,221 119,169 ' rotate="45"/>
+                <zone xml:id="sign" points = ' 63,215 20,224 136,370 185,362 102,225 ' rotate="45"/>
+                <!-- indirizzo destinatario -->
+                <zone xml:id="to" points = ' 313,96 290,124 388,131 385,157 473,127 469,100 ' />
+                <zone xml:id="destinatario" points = ' 296,130 281,160 546,173 547,149 '/>
+                <zone xml:id="address" points = ' 302,170 286,228 360,228 506,243 593,222 595,178 ' />
+                <zone xml:id="place" points = ' 309,226 256,311 574,360 575,258 ' />
+                <!-- for address only -->
+                <zone xml:id="addOnly" points = ' 342,104 343,117 440,118 438,103 ' />
+            </surface>
+            <!--riproduzione del fronte-->
+            <surface xml:id="c025F">
+                <graphic url='7694-025F.jpg' width='1644px' height='1043px' />
+                <!-- Scritta paesaggio -->
+                <zone xml:id="loch" points = ' 15,351 11,375 103,375 101,354 ' />
+                <zone xml:id="centralspot" points = ' 185,22 168,67 187,119 232,136 249,149 267,175 314,171 335,122 309,109 235,98 201,49 ' />
+            </surface>
+        </facsimile>
+
+        <!-- text element fronte cartolina 25-->
+        <text xml:id="descCarto">
+            <body>
+                <div facs="#loch">
+                    <figure>
+                        <graphic url='7694-025F.jpg' width='1644px' height='1043px' />
+                        <figDesc> Loch Tummel Queen's View.</figDesc>
+                    </figure>
+                    <p> 
+                    Veduta dalla località "Queen's View" del Lago di Tummel, in Scozia.
+                    Una descrizione dettagliata viene fornita nel retro della cartolina.
+                    </p>
+                </div>
+            </body>
+        </text>
+
+        <!-- text element retro parte destra cartolina 25 -->
+        <text xml:id="timbri">
+            <body>
+                <div type="stamp">
+                    <p>
+                        <stamp type="postmark" facs="#timbroArrivo">
+                            Timbro di arrivo. <unclear reason="faded"> Ravenna </unclear>
+                            <date ref="#postcard_date">data: 26-11-1916. </date>
+                        </stamp>            
+                            <stamp type="postage" facs="#timbroInvio"> Timbro di emissione, <unclear reason="illegible" agent="rubbing"> illeggibile. </unclear>
+                            Francobollo girato al contrario e posto in diagonale rispetto alla guida.
+                            Si presuppone che il luogo di spedizione sia Modena.
+                            </stamp>
+                        
+                        <stamp type="printed" facs="#addOnly"> 
+                            <unclear reason="illegibile" agent="timbro"> "For address only" </unclear> 
+                            Indicazioni cartolina: dove inserire indirizzo di spedizione.
+                        </stamp>
+                    </p>
+                </div>
+            </body>
+        </text>
+
+        <!--INDIRIZZO DESTINATARIO cartolina 25-->
+        <text xml:id="address25">
+            <body>
+                <div>
+                    <ab>
+                        <address>
+                            <addrLine facs="#to">
+                                <rs>                                    <!-- frase di riferimento -->
+                                    <add type="opening formula"> Alla </add>
+                                    <abbr corresp="Signorina" type="opening formula">
+                                        <unclear reason="illegible">S</unclear>ig. 
+                                        <unclear reason="eccentric_ductus">na</unclear>
+                                    </abbr>
+                                </rs>
+                            </addrLine>
+
+                            <addrLine facs="#destinatario">
+                                <persName ref="#Oliva">
+                                    <forename>Oliva</forename>
+                                    <surname>Turtura</surname>
+                                </persName>
+                            </addrLine>
+
+                            <street facs="address">  Via <name>Girolamo Rossi</name> <num>58</num>
+                            </street>
+
+                            <addrLine facs="place">
+                                <placeName ref="#RA">Ravenna</placeName>
+                            </addrLine>
+                        </address>
+                    </ab>
+                </div>
+            </body>
+        </text>
+
+        <!-- elementi della filigrana cartolina 25-->
+        <text>
+            <body>
+                <div type="stamp">
+                    <p>
+                        <stamp type="printed">
+                            <lb/>
+                            <title type="main" facs="#titolo"> Tuck's Post Card </title>
+                            <title type="sub" facs="#sottoTitolo"> carte postale _________ postkarte </title>
+                            <note facs="#stampLeft"> Stemma reale del Regno Unito. </note>
+                            <title type="desc" facs="#desc025" xml:lang="en">
+                                Loch Tummel<pc>,</pc> formed by the expansion of the <lb/>
+                                waters of the River Tummel<pc>,</pc> is about three miles <lb/>  
+                                long and half a mile wide<pc>.</pc> It is one of the most <lb/>  
+                                charming of the Scottish lakes<pc>,</pc> an especially <lb/>  
+                                favourite view-point being the <pc>"</pc>Queen<pc>'</pc>s View<pc>"</pc> at <lb/>  
+                                the eastern extremity<pc>.</pc> From here the soft<pc>,</pc> <lb/>  
+                                wooded shores<pc>,</pc> with their backing of moor and <lb/>  
+                                mountain<pc>,</pc> are seen to best advantage<pc>,</pc> the im<pc force="inter">-</pc> <lb/>  
+                                posing peak of Schiehallion (<measure type="height">
+                                <num>3,546</num> <unit unit="ft"> feet </unit> </measure>) being a <lb/>  
+                                dominating feature of the landscape<pc>.</pc>
+                            </title>
+                            <note xml:lang="it" xml:id="itdesc025">
+                                Loch Tummel, formato dall'espansione delle acque del fiume Tummel, è lungo circa tre miglia
+                                e largo mezzo miglio. È uno dei laghi scozzesi più affascinanti, un punto panoramico particolarmente apprezzato è il "Queen's View" all'estremità orientale. 
+                                Da qui le morbide rive boscose, con il loro sostegno di brughiera e montagna, sono viste al meglio, l'imponente vetta di Schiehallion (3.546 piedi) è una caratteristica dominante del paesaggio.
+                            </note>
+                        </stamp>
+                    </p>
+                </div>
+            </body>
+        </text>
+
+        <!-- testo cartolina 25-->
+        <text type="handwritten" xml:id="textC025">
+            <body>
+                <div type="handwritten" facs="#num25">
+                    <p> Numero di serie per archiviazione: <num>25</num></p>
+                </div>
+                <div type="handwritten">
+                    <opener>
+                        <dateline facs="#date">
+                            <date when="1916-11-23">lì 23/11 1916 </date>
+                        </dateline>
+                    </opener>
+                    <p facs="#riga1"> Deliziando </p>
+                    <closer>
+                        <salute facs="#riga2"> affettuosissimi </salute>
+                        <signed facs="#sign">
+                            <persName ref="#auth_GC">Giovannino</persName>
+                        </signed>
+                    </closer>
+                </div>
+            </body>
+        </text>
+    </TEI>
+
+    <!--CARTOLINA 35-->
+    <TEI xml:id="C035">
+        <!--- CODIFICA CARTOLINA 7694-035 -->
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <!-- titolo cartolina  -->
+                    <title> Arlecchino </title>
+                    <!-- trascrizione e codifica a cura di -->
+                    <respStmt>
+                        <resp> Trascrizione e codifica Tei a cura di </resp>
+                        <persName ref="#LR"> Laura Rossi </persName>
+                        <persName ref="#SB"> Silvia Bonaccorsi </persName>
+                    </respStmt>
+                </titleStmt>
+
+                <editionStmt>
+                    <edition> Edizione digitale 
+                        <date> 2021 </date>
+                    </edition>
+                    <respStmt>
+                        <resp>Encoding</resp>
+                        <name ref="#LR"> Laura Rossi </name>
+                        <name ref="#SB"> Silvia Bonaccorsi </name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Compilatore</resp>
+                        <name ref="#TC">Tommaso Castagneto</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Responsabile scientifico</resp>
+                        <name ref="#GP">Giacomo Paolicchi</name>
+                        <name ref="#ES">Enrica Salvatori</name>
+                    </respStmt>
+                    <respStmt>
+                        <resp>Funzionario responsabile</resp>
+                        <name ref="#MR">Marzia Ratti</name>
+                    </respStmt>
+                </editionStmt>
+
+                <publicationStmt>
+                    <publisher>
+                        <orgName type="university"> Università di <placeName ref="#PI">Pisa</placeName>
+                        </orgName>
+                    </publisher>
+                    <distributor>
+                        <orgName>Museo di La Spezia</orgName>
+                    </distributor>
+                    <pubPlace>
+                        <placeName ref="#SP"> La Spezia(SP) </placeName>
+                    </pubPlace>
+                    <availability status="restricted">
+                        <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                    </availability>
+                </publicationStmt>
+
+                <sourceDesc>                    <!-- fonti della cartolina -->
+
+                    <bibl type="postcard">                        <!-- bibliographic citation -->
+                        <author>
+                            <persName ref="#auth_GC">
+                                <forename> Giovanni </forename>
+                                <surname> Coliola </surname>
+                            </persName>
+                        </author>
+                        <title> Arlecchino </title>
+
+                        <date xml:id="noDate" notBefore="1911" notAfter="1920"> La cartolina non ha una data di invio,
+                         ma si presuppone che il periodo di riferimento vada dal 1911 al 1920.</date>
+
+                        <publisher facs="#prop"> Proprietà artistica riservata N°. 5 - 4 </publisher>
+                        <pubPlace> Sconosciuto </pubPlace>
+                    </bibl>
+                      <!--- DESCRIZIONE CARTOLINA 7694-035-->
+                    <msDesc>                        <!-- informazioni sulla cartolina-->
+                        <msIdentifier>
+                            <country> Italia </country>
+                            <!-- codice indentificativo cartolina-->
+                            <idno> 7694_035 </idno>
+                        </msIdentifier>
+                        <msContents>                            <!-- informazioni sul contenuto della cartolina -->
+                            <summary> Cartolina artistica </summary>
+                            <textLang> Italiano </textLang>
+                        </msContents>
+                        <physDesc>                            <!-- Descrizone fisica dei contenuti -->
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>  <!-- descrizione dei materiali  -->
+                                        <material>Cartoncino</material>
+                                        <!-- grandezza appossimativa del documento elettronico -->
+                                        <dimensions unit="cm">
+                                            <height>14</height>
+                                            <width>9</width>
+                                        </dimensions>
+                                        <stamp facs="#filfranco"> <!-- timbro -->
+                                            Nessun timbro o francobollo è presente nella cartolina, non è mai stata spedita.
+                                            Infatti manca di indirizzo di spedizione e relativo timbro postale, 
+                                            sia di accettazione postale che di arrivo al destinatario.
+                                            Si può notare la dicitura all'interno della filigrana del francobollo, che indica <unclear agent="handwriting">"Produzione italiana"</unclear>.
+                                        </stamp>
+                                        <stamp facs="#minitimbro">
+                                            Elemento della filigrana della cartolina, al suo interno si vedono delle iniziali, presumibilmente: <unclear reason="illegible" agent="handwriting">"GBC"</unclear>,
+                                            illeggibili per il testo scritto a mano soprastante.
+                                        </stamp>
+                                        <!-- descrizione della cartolina -->
+                                        <p facs="#arle">
+                                            Testo principalmente posto sul retro, la chiusura della cartolina viene riportata sul fronte per mancanza di spazio. 
+                                            La parte sul retro presenta evidenti segni di ingiallimento, dovuti ad usura, mentre il davanti mostra segni di muffa sulla parte alta del disegno. 
+                                            Nel retro possiamo inoltre notare la mancanza di: destinario, timbri e data di stesura.  
+                                            Il cartoncino è di colore avorio, e nel fronte è riportato un disegno con una raffigurazione di Arlecchino. 
+                                        </p>
+                                        <note facs="#signarle">
+                                            Firma dell'autore: <unclear reason="illegible eccentric_ductus">"Ramorino"</unclear>.
+                                            Accanto al disegno è presente quella che sembra essere la firma dell'autore,
+                                            che però risulta illegibile a causa della grafia e dell'inchiostro sbiadito.
+                                        </note>
+                                    </support>
+                                    <condition> Buono </condition>
+                                </supportDesc>
+                            </objectDesc>
+                            <handDesc>
+                                <p>
+                                    E' stato utilizzato tutto lo spazio disponibile per poter scrivere il testo della cartolina,
+                                    ed è presente nella parte frontale la chiusura della stessa.
+                                </p>
+                            </handDesc>
+                        </physDesc>
+                    </msDesc>
+
+                    <!-- lista persone -->
+                    <listPerson>
+                        <person role="sender">
+                            <persName ref="#auth_GC">
+                                <forename>Giovanni</forename>
+                                <addName type="nickname">"Giovannino"</addName>
+                                <surname>Coliola</surname>
+                            </persName>
+                            <sex value="M">uomo</sex>
+                            <nationality key="IT">italiano</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                        </person>
+
+                        <person role="addressee">
+                            <persName ref="#Oliva">
+                                <forename>Oliva</forename>
+                                <surname>Turtura</surname>
+                            </persName>
+                            <sex value="F">donna</sex>
+                            <nationality key="IT">italiana</nationality>
+                            <langKnowledge>
+                                <langKnown tag="it-IT">italiano</langKnown>
+                            </langKnowledge>
+                        </person>
+                    </listPerson>
+
+                    <!-- lista luoghi -->
+                    <listPlace>
+                        <place>
+                            <placeName type="country" key="IT"> Italia </placeName>
+                            <location>
+                                <country key="IT">Italia</country>
+                            </location>
+                        </place>
+                    </listPlace>
+                </sourceDesc>
+            </fileDesc>
+
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <date ref="#noDate"> Si presuppone che la data di spedizione vada nell'arco temporale 1911 - 1919  </date>
+                        <persName ref="#auth_GC" role="sender"> Giovanni Coliola </persName>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#Oliva" role="addressee"> Oliva Turtura </persName>
+                        <location>
+                            <country key="IT"/>
+                        </location>
+                    </correspAction>
+                </correspDesc>
+                <langUsage>
+                    <language ident="it-IT">Italiano</language>
+                </langUsage>
+            </profileDesc>
+
+        </teiHeader>
+        <!-- Facsimile Cartolina -->
+        <facsimile>
+            <!--riproduzione del retro-->
+            <surface xml:id="c035R">
+                <graphic url='7694-035R.jpg' width='1655px' height='1048px' />
+                <!-- formula di apertura -->
+                <zone xml:id="carissima" points = ' 58,10 15,50 48,63 55,79 103,49 185,52 221,52 243,24 193,9 110,9 ' />
+                <zone xml:id="finalmente" points = ' 236,34 197,67 206,93 238,77 401,74 522,64 529,76 579,74 587,36 499,41 467,33 429,39 385,47 315,49 264,47 268,33 ' />
+                <!-- righe corpo -->
+                <zone xml:id="frase1" points = ' 47,89 7,139 88,119 194,116 226,125 357,109 496,115 534,104 591,103 592,76 530,82 529,62 477,76 252,81 198,93 124,82 ' />
+                <zone xml:id="frase2" points = ' 22,143 64,122 108,128 157,127 192,116 273,114 389,113 500,115 536,105 595,110 597,143 561,148 552,133 430,135 376,149 351,138 261,141 220,136 190,142 120,144 34,149 ' />
+                <zone xml:id="frase3" points = ' 31,155 27,175 175,169 188,174 241,164 306,163 405,161 549,161 566,168 595,149 552,136 431,139 397,140 350,140 252,143 217,133 184,144 ' />
+                <zone xml:id="frase4" points = ' 25,180 23,197 59,194 156,196 158,212 180,191 218,191 404,186 484,182 488,193 513,184 501,199 573,185 577,204 596,176 548,155 411,160 263,163 196,173 ' />
+                <zone xml:id="frase5" points = ' 27,198 12,226 22,235 109,220 144,221 161,216 174,220 189,213 211,216 320,212 381,211 467,209 555,211 583,218 597,196 536,186 428,184 184,190 151,210 74,194 ' />
+                <zone xml:id="frase6" points = ' 22,246 63,245 156,239 321,234 382,233 382,240 423,232 462,233 559,235 573,242 595,220 559,210 345,208 195,213 153,219 56,226 56,226 ' />
+                <zone xml:id="frase7" points = ' 26,253 20,265 96,265 236,262 240,272 284,266 360,263 415,256 591,256 593,235 443,228 327,230 146,237 52,246 ' />
+                <zone xml:id="frase8" points = ' 14,272 13,289 173,281 189,286 241,285 250,290 303,282 585,285 589,259 350,263 238,273 161,265 57,266 '  />
+                <zone xml:id="frase9" points = ' 16,293 15,306 189,304 265,302 382,301 530,297 579,301 570,281 317,281 91,283 ' />
+                <zone xml:id="frase10" points = ' 41,304 23,324 158,323 304,322 390,321 573,320 576,302 337,302 309,310 288,301 196,304 69,305 '  />
+                <zone xml:id="frase11" points = ' 35,329 21,348 88,347 179,344 248,340 339,340 588,339 577,321 '/>
+                <zone xml:id="frase12" points = ' 17,349 15,370 91,359 594,362 595,339 ' />
+                <zone xml:id="frase13" points = ' 25,367 19,378 598,379 597,362 309,359 133,358 91,360 ' />
+                <!-- Filigrana cartolina centrale in basso -->
+                <zone xml:id="minitimbro" points = ' 248,355 259,337 293,340 291,355 286,364 266,369 ' />
+                <!-- Proprietà artistica -->
+                <zone xml:id="prop" points = ' 11,344 23,348 28,146 12,147 ' />
+                <!-- codifica cartolina -->
+                <zone xml:id="num35" points = ' 8,79 22,100 41,84 31,63 ' />
+                <!-- Parte alta scritta al contrario -->
+                <zone xml:id="frase14" points = ' 595,40 443,41 380,48 343,54 307,45 283,54 275,40 350,31 431,26 530,22 597,23 ' rotate="180"/>
+                <!-- prima riga dal bordo superiore -->
+                <zone xml:id="frase16" points = ' 2,19 1,2 49,19 74,13 113,12 159,24 189,10 254,14 318,15 344,16 389,11 455,12 590,10 589,4 10,2 ' rotate="180"/>
+                <!-- seconda riga dopo Carissima Oliva -->
+                <zone xml:id="frase15" points = ' 273,18 266,29 277,33 317,31 381,25 439,24 472,29 557,20 593,21 593,10 ' rotate="180"/>
+                <!-- terza riga sopra a "Finalmente" -->
+                <!-- Filigrana francobollo -->
+                <zone xml:id="filfranco" points = ' 492,117 576,116 577,12 491,12 ' />
+            </surface>
+            <!-- riproduzione del fronte -->
+            <surface xml:id="c035F">
+                <graphic url='7694-035F.jpg' width='378.96826px' height='599.96826px' />
+                <!-- immagine ovale -->
+                <zone xml:id="arle" points = ' 150,80 88,124 45,207 30,288 50,399 102,482 197,518 280,486 331,419 359,322 348,226 314,142 240,81 ' />
+                <!-- saluti finali -->
+                <zone xml:id="saluti" points = ' 8,509 36,502 45,528 363,519 376,578 372,598 3,596 '/>
+                <!-- firma del disegno -->
+                <zone xml:id="signarle" points = ' 280,375 358,378 348,418 278,401 '/>
+            </surface>
+        </facsimile>
+
+        <!-- descrizione luogo e elementi filigrana saltata -->
+
+        <!-- testo -->
+
+        <text type="handwritten" xml:id="textC035">
+            <body>
+                <div type="handwritten" facs="#num35">
+                        <p> 
+                            Numero di serie per archiviazione:
+                            <num>35</num>
+                        </p>
+                </div>
+                <div type="handwritten">
+                    <opener>
+                        <salute facs="#carissima">
+                            <s> Carissima Oliva </s>
+                        </salute>
+                    </opener>
+                    <p>
+                        <s n="0" facs="#finalmente" ><lb break="no"/>Finalmente<pc type="esclamative">!</pc> Credevo pro<pc>-</pc></s> 
+                        <!-- da segnalare testo a capo -->
+                        <s n="1" facs="#frase1"><lb break="no"/> prio tu mi avessi dimenticato<pc type="esclamative">!</pc> Speriamo </s>
+                        <s n="2" facs="#frase2"><lb break="no"/> che<pc>,</pc> come dici<pc>,</pc> mi scriverai più sovente per </s>
+                        <s n="3" facs="#frase3"><lb break="no"/> l'avvenire<pc>.</pc> Godo nel saperti in salute<pc>;</pc><pc force="inter">-</pc> </s>
+                        <s n="4" facs="#frase4"><lb break="no"/> mi meraviglia la tua nuova professione </s>
+                        <s n="5" facs="#frase5"><lb break="no"/> Perché<pc type="interrogative">?</pc> E i tuoi scolari<pc type="interrogative">?</pc> P<unclear reason="ink blot">uo</unclear>i vivere sen<pc force="inter">-</pc> </s>
+                        <s n="6" facs="#frase6"><lb break="no"/> za di loro<pc type="interrogative">?</pc> E il latino<pc type="interrogative">?</pc> Non potrò avere l'o<pc force="inter">-</pc> </s>
+                        <s n="7" facs="#frase7"><lb break="no"/> nore di chiamarti professoressa<pc type="interrogative">?</pc> Dirai che sono </s>
+                        <s n="8" facs="#frase8"><lb break="no"/> molto cur<unclear reason="ink blot">i</unclear>oso<pc>,</pc> anzi più indiscreto che curioso<pc>,</pc> </s>
+                        <s n="9" facs="#frase9"><lb break="no"/> ma che vuoi mi meraviglia talmente il </s>
+                        <s n="10" facs="#frase10"><lb break="no"/> tuo nuovo indirizzo che<pc>,</pc> a rischio della </s>
+                        <s n="11" facs="#frase11"><lb break="no"/> tua collera mi permetto di <hi rend="underline">formularti</hi></s>
+                        <s n="12" facs="#frase12"><lb break="no"/> queste domande<pc>.</pc> Fammi sapere qualche   </s>
+                        <s n="13" facs="#frase13"><lb break="no"/> cosa<pc>,</pc> scrivimi a lungo<pc>,</pc> non commercial<pc force="inter">-</pc></s>
+
+                        <!-- frasi girate -->
+                        <s n="16" facs="#frase14"><lb break="no"/> mente però e mi farai </s>
+                        <s n="15" facs="#frase15"><lb break="no"/> veramente piacere<pc>.</pc> Io sto </s>
+                        <s n="14" facs="#frase16"><lb break="no"/> benissimo come tutti noi e come di voi non dubito<pc>.</pc> </s>
+                    </p>
+                    <!-- parte frontale -->
+                    <closer>
+                        <salute facs="#saluti"> Saluta tutti caramente<pc>,</pc> anche
+                                a nome di mamma e <unclear reason="faded"> <!-- sbiadito --> Nino</unclear> e
+                                tu ricevi un abbraccio affettuoso 
+                                da Mario<pc>.</pc>
+                        </salute>
+                    </closer>
+                    <postscript facs="#saluti"> 
+                        <label> P.S </label> 
+                        <p> scrivi presto </p>
+                    </postscript>
+                </div>
+            </body>
+        </text>
+    </TEI>
+</TEI>    <!--CONCLUSIONE TEI GENERALE-->

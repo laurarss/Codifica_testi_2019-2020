@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Sansita+Swashed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background: #dbbd93;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+
+h1, h2, h4 {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Sansita Swashed', cursive;
+}
+
+footer {
+    float: bottom;
+    background-color: #763c28;
+    color: white;
+}
+
+footer table {
+    color: white;
+    margin: 0;
+}
+
+table {
+    text-align: justify;
+    border-collapse: collapse;
+    margin: 1% 4% 1% 4%;
+}
+
+hr {
+    color: #453c31;
+    border: 1px solid;
+}
+
+footer td {
+    border-left: 2px solid white;
+}
+
+footer th {
+    text-align: center;
+}
+
+td, td {
+    margin: auto;
+    width: 20%;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+img {
+    display: inline-block;
+    padding: 3px; /* deve essere uguale a .overlay */
+}
+
+.overlay {
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 3px; /* deve essere uguale a img */
+}
+
+svg {
+    transform-origin: 0 0;
+    position: absolute;
+    top: 0;
+    /* left: 27px; */
+    display: inline-block;
+    width: 550, 33;
+    height: 360, 33;
+}
+
+polygon {
+    background: inherit;
+    fill: transparent;
+    color: inherit;
+}
+
+.img_container {
+    position: relative;
+}
+
+.img_size {
+    width: 600px;
+    height: auto;
+}
+
+.cart {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content_tooltip {
+    position: relative;
+    background: #bca380;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.digital {
+    width: calc(1651px/3);
+    height: calc(1081px/3);
+    display: flex;
+}
+
+.manoscritto {
+    padding: 2px;
+    margin: 0;
+    border-bottom: 1px dotted #8a7c6c;
+    min-height: 19px;
+    transition: all .2s linear;
+}
+
+/* zona evidenziata al passaggio del mouse */
+.area:hover {
+    background-color: #763c28;
+    stroke: #763c28;
+    fill: #763c28;
+    color: white;
+    fill-opacity: .5;
+    transition: .5s linear;
+}
+
+/* classe per nascondere */
+.isHidden {
+    display: none;
+}
+
+
+button {
+    border: 2px solid;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #763c28;
+   /* border-bottom-right-radius: 25px; */
+    margin: 0 auto;
+}
+
+#text-C025, #text-C035 {
+    text-align: center;
+}
+
+/* classe per evidenziare */
+.highlight {
+    background-color: #bca380;
+    fill-opacity: .5;
+    color: #453c31;
+}
+
+#c035R {
+    margin-top: 36%;
+}
