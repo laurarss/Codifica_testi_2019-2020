@@ -1,2 +1,0 @@
-<!ELEMENT radice (figlio)>
-<!ELEMENT figlio (#PCDATA)>
